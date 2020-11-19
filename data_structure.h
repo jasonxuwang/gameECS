@@ -29,6 +29,8 @@ struct status {
 
 
 struct stat_change {
-    int[] to_send;
-    byte[] status_bytes;
+    int32_t[] to_send;
+    int32_t broadcast;
+    char* status_bytes;
+    int32_t msg_len;
 };
